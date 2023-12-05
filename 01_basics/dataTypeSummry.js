@@ -12,7 +12,7 @@ let userEmail;
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(id === anotherId)
+// console.log(id === anotherId)
 
 // const bigNumber = 545489750980582n //this 'samll n' is used as bigInt
 
@@ -30,4 +30,27 @@ const myFunction = function(){
     console.log("Hey Subhan");
 }
 
-console.log(typeof myFunction)
+// console.log(typeof myFunction)
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//Stack (primitve), Heap(non-Primitve)
+
+let myFullName = "syed tahair subhan hussain"
+
+let myName = "syed subhan"
+myName = "sd subhan"
+
+console.log(myFullName);
+console.log(myName)
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl",
+}
+
+let userTwo = userOne
+
+userTwo.email = "ssubhan@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
