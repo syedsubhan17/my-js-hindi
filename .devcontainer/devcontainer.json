@@ -8,7 +8,8 @@
 		"vscode": {
 			"extensions": [
 				"esbenp.prettier-vscode",
-				"ritwickdey.LiveServer"
+				"ritwickdey.LiveServer",
+				"hiteshchoudharycode.chai-theme"
 			]
 		}
 	}
