@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in Javascript</title>
+    <script defer src="/my-js-hindi/08_Events/one.js"></script>
+    <style>
+        .fruits{
+            height: 250px;
+            width: 250px;
+            margin: 10px;
+            margin-left: 40px;
+            margin-bottom: 10px;
+            border-radius: 10px;            
+        }
+    </style>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <h2>
+        <div id="images">
+            <li><img class="fruits" src="/my-js-hindi/08_Events/temp imgs/mango.jpg" id="mango" alt="mango"></li>
+            <li><img class="fruits" src="/my-js-hindi\08_Events\temp imgs\strawberry.gif" id="strawberry" alt="strawberry"></li>
+            <li><img class="fruits" src="/my-js-hindi\08_Events\temp imgs\peach.png" id="peach" alt="peach"></li>
+            <li><img class="fruits" src="/my-js-hindi\08_Events\temp imgs\banana.png" id="banana" alt="banana"></li>
+            <li><img class="fruits" src="/my-js-hindi\08_Events\temp imgs\grapes.jpg" id="grapes" alt="grapes"></li>
+        </div>
+    </h2>    
+</body>
+<script>
+    // document.getElementById('peach').onclick = function() {
+    //     alert("you clicked on peach") //approach 1st
+    // }
+    // document.getElementById('mango').addEventListener('click', function(){
+    //     alert("you clicked on mango")
+    // })
+
+    //attach Event()
+    // jQuert --> onEvent()
+
+    // document.getElementById('images').addEventListener('click', function(e) {
+    //     console.log("you clicked on one of the image");
+    //     // alert("you clicked on one of the image");
+    // }, false)
+
+    // document.getElementById('strawberry').addEventListener('click', function(e) {
+    //     console.log("you clicked on strawberry");
+    //     // alert("you clicked on strawberry");
+    //     e.stopPropagation()
+    // }, false)
+
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+        if (e.target.tagName === 'img') {
+            console.log(e.target.id);
+        let removeIt = e.target.parentNode
+        // removeIt.parentNode.removeChild(removeIt)
+        removeIt.remove()
+        }
+    })
+</script>
+</html> 
