@@ -2,9 +2,9 @@
 
 console.log("SUBHAN");
 
-let name = "subhan"
+let name = " syed subhan"
 let age = 18
-let isLoggedIn = false
+let isLoggedIn = false 
 
 //  number => to power 53
 //  bigint
